@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')();
-let inicio = Number(prompt("ano em que você nasceu: "))
-let fim=new Date(year, monthIndex, day);
-console.log(date.getDate()-idade);
+let hoje = new Date();
+let ultimo = new Date('2026-12-31');
+//console.log("Faltam "+(ultimo.getDate-hoje.getDay))
+console.log("Faltam "+Math.round(((ultimo-hoje)/(1000*60*60*24)+1)));
